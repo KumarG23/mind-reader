@@ -50,20 +50,20 @@ function visible(element) {
     element.style.visibility = 'visible'
 }
 
-function randomSymbol() {
-    let symbolString = "";
-    let randomNine = symbols[Math.floor(Math.random() * symbols.length)];
+function randomSymbol() { // function that returns a random symbol with Math.random. 
+    let symbolString = ""; // accumulates numbers & symbols as function runs
+    let randomNine = symbols[Math.floor(Math.random() * symbols.length)]; // randomly selects a symbol from symbols array, stores in randomNine, uses math.random to generate a random number between 0 and length of symbols array, Math.floor rounds down the nearest integer.
 
-    for (let i = 0; i < symbols.length; i++) {
-        if (i % 9 === 0) {
-            symbolString += i + " - " + randomNine + "<br>";
+    for (let i = 0; i < symbols.length; i++) { // begins loop that goes over each element of symbols array, loop variable i starts at 0, the loop continues as long as i is less than length of symbols array. 
+        if (i % 9 === 0) { // checks if i is a multiple of 9, ensures randomNine is repeated ever 9 numbers
+            symbolString += i + " - " + randomNine + "<br>"; // if true appends number i followed by - randomNine symbol to symbolString
         } else {
-            let random = symbols[Math.floor(Math.random() * symbols.length)];
-            symbolString += i + " - " + random + "<br>";
+            let random = symbols[Math.floor(Math.random() * symbols.length)]; // if false appends random symbol from symbols array to random. makes sure that numbers that are not randomNine are displayed for numbers that are not multiples of 9
+            symbolString += i + " - " + random + "<br>"; // appends current number i - and random symbol to symbolString
         }
     }
-    yourSymbol = randomNine;
-    return symbolString;
+    yourSymbol = randomNine; // assigns randomNine symbol to variable yourSymbol
+    return symbolString; // returns accumulated symbolString, this is used to display numbers and symbols together
 }
 
 

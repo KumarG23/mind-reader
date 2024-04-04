@@ -1,23 +1,7 @@
-*, ::before, *::after {
-    box-sizing: border-box;
+button {
+    font-weight: bold;
 }
 
-body {
-    margin: 0;
-}
-
-.pages{
-   height: vh100;
-   width: vw100;
-   position: relative;
-}
-
-.page {
-    position: absolute;
-    inset: 0;
-    
-}
-
-ul {
-    list-style: none;
+button:hover {
+    transform: translateY(-10px);
 }
