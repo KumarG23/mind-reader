@@ -7,7 +7,6 @@
  let mainText = document.getElementById('mainText');
  let instructText = document.getElementById('instructText');
  let nextBtn = document.getElementById('nextBtn');
- let prevBtn = document.getElementById('prevBtn');
  let resetBtn = document.getElementById('resetBtn');
  let startBtn = document.getElementById('startBtn');
  let revealBtn = document.getElementById('revealBtn');
@@ -24,18 +23,12 @@
     stateChange();
  }
 
- // function to go to previous page and change state
- function prevBtnFunc() {
-    currentPage--;
-    stateChange();
- }
 
 
 
  // click event listeners for each button
  nextBtn.addEventListener('click', nextBtnFunc);
  startBtn.addEventListener('click', nextBtnFunc);
- prevBtn.addEventListener('click', prevBtnFunc);
  resetBtn.addEventListener('click', resetBtnFunc);
  revealBtn.addEventListener('click', nextBtnFunc);
 
@@ -76,7 +69,6 @@ switch (currentPage) {
     case 0:
         mainText.innerHTML="I can read your mind!";
         invisible(nextBtn);
-        invisible(prevBtn);
         invisible(instructText);
         invisible(resetBtn);
         visible(startBtn);
@@ -85,7 +77,6 @@ switch (currentPage) {
     case 1:
         mainText.innerHTML="Pick a number from 01 - 99";
         visible(nextBtn);
-        visible(prevBtn);
         visible(instructText);
         instructText.innerHTML="When you have your number click next"
         visible(resetBtn);
@@ -95,7 +86,6 @@ switch (currentPage) {
     case 2:
         mainText.innerHTML="Add both digits together to get a new number";
         visible(nextBtn);
-        visible(prevBtn);
         visible(instructText);
         instructText.innerHTML="Ex. 14 is 1 + 4 = 5 <br> click next to proceed";
         visible(resetBtn);
@@ -105,7 +95,6 @@ switch (currentPage) {
     case 3:
         mainText.innerHTML="Subtract your new number from the original number";
         visible(nextBtn);
-        visible(prevBtn);
         visible(instructText);
         instructText.innerHTML="Ex. 14 - 5 = 9 <br> click next to proceed";
         visible(resetBtn);
@@ -115,7 +104,6 @@ switch (currentPage) {
     case 4:
         mainText.innerHTML= randomSymbol();
         invisible(nextBtn);
-        visible(prevBtn);
         visible(instructText);
         instructText.innerHTML="Find your new number. <br> Note the symbol beside the number"
         visible(resetBtn);
@@ -125,7 +113,6 @@ switch (currentPage) {
     case 5:
         mainText.innerHTML= yourSymbol;
         invisible(nextBtn);
-        visible(prevBtn);
         visible(instructText);
         instructText.innerHTML="Your symbol is: <br>" + yourSymbol;
         visible(resetBtn);

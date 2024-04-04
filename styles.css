@@ -1,7 +1,24 @@
-button {
-    font-weight: bold;
+#startBtn {
+    height: 50px;
+    width: 50px;
+    border-radius: 50%;
+    margin-left: 300px;
+    margin-top: 75%;
 }
 
-button:hover {
-    transform: translateY(-10px);
+#resetBtn {
+    margin-left: 75%;
+    height: 50px;
+    width: 50px;
+    border-radius: 50%;
 }
+
+
+#revealBtn {
+    margin-bottom: 20px;
+}
+
+#nextBtn {
+    margin: 10px;
+}
+
