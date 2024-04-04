@@ -10,16 +10,21 @@
 
 </head>
 
-<body>
-<div id="viewContainer">
-    <div class="buttons">
-        <button id="nextBtn">Next</button>
-        <button id="restBtn">Reset</button>
-        <button id="prevBtn">Previous</button>
-       
+<body onload="init()">
+    <div class="container">
+        <div class="row">
+            <div class="col display-1 text-center text-secondary" id="mainText"></div>
+        </div>
+    <div class="row">
+        <div id="instructText"></div>
     </div>
+    <button id="nextBtn">Next</button>
+    <button id="prevBtn">Previous</button>
+    <button id="resetBtn">Reset</button>
+    <button id="startBtn">Start</button>
+    <button id="revealBtn">Reveal</button>
 </div>
-
+   
     <script src="main.js"></script>
 </body>
 

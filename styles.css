@@ -1,0 +1,23 @@
+*, ::before, *::after {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+}
+
+.pages{
+   height: vh100;
+   width: vw100;
+   position: relative;
+}
+
+.page {
+    position: absolute;
+    inset: 0;
+    
+}
+
+ul {
+    list-style: none;
+}
