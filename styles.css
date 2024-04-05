@@ -29,8 +29,8 @@ body {
 #mainText {
     overflow: scroll;
 }
-#bottom {
-    justify-content: end;
+#top {
+    justify-content: space-between;
 }
 
 
