@@ -8,3 +8,5 @@
 - Debug
 - Test
 - commit and push when making changes
+
+- figured out the javascript and randomizer. having trouble with spacing with bootstrap.
