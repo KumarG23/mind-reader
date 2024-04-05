@@ -1,9 +1,13 @@
+body {
+    height: 100vh;
+    display: flexbox;
+}
+
 #startBtn {
     height: 50px;
     width: 50px;
     border-radius: 50%;
     margin-left: 300px;
-    margin-top: 75%;
 }
 
 #resetBtn {
@@ -12,13 +16,10 @@
     width: 50px;
     border-radius: 50%;
 }
-
-
-#revealBtn {
-    margin-bottom: 20px;
+#mainText {
+    overflow: scroll;
 }
 
-#nextBtn {
-    margin: 10px;
-}
+
+
 
