@@ -17,6 +17,7 @@ body {
     margin-left: 75%;
     position: relative;
     flex: end;
+    margin-bottom: 20px;
 }
 
 #resetBtn {
